@@ -301,7 +301,7 @@ class ClockedScheduleAdmin(ScheduleAdmin):
 class CrontabScheduleAdmin(ScheduleAdmin):
     """Admin class for CrontabSchedule."""
 
-    list_display = ('__str__', 'human_readable')
+    list_display = ('id', '__str__', 'human_readable')
     fields = ('human_readable', 'minute', 'hour', 'day_of_month',
               'month_of_year', 'day_of_week', 'timezone')
     readonly_fields = ('human_readable', )
